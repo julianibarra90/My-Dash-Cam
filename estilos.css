@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: 'Raleway',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+.Titulo{
+    display: inline-flex;
+    font-size: 30px;
+    transition: .3s ease;
+    color: #333;
+}
+.Titulo:hover{
+    transform: scale(1.1);
+    
+}
+
+.Navegacion{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    align-items: center;
+}
+.Navegacion nav{
+    display: flex;
+    gap: 30px;
+}
+/* From Uiverse.io by ke1221 */ 
+button {
+    color: #090909;
+    padding: 0.3em 0.3em;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    }
+    button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+    }
+    
+    .container{
+        height: 100vh;
+    
+        perspective: 1px;
+        transform-style: preserve-3d;
+        overflow-x: hidden;
+        overflow-y:auto;
+    
+    }
+    .parallax{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    
+        transform-style: preserve-3d;
+    }
+    .background{
+        position: absolute;
+        width: 100vw;
+        height: 100;
+        top: 0;
+        left: 0;
+        z-index:-1;
+        transform: translateZ(-1px) scale(2);
+    }
+    .viewport{
+        width: 100% ;
+    
+    }
+    
+    .normal{
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    h1{
+        margin: auto;
+        width: 90%;
+        font-size: 80px;
+        font-weight: 900;
+        color: #fff;
+        line-height: 1.1;
+        letter-spacing: -2px;
+        word-spacing: 90vw;
+        text-align: justify;
+        text-transform: uppercase;
+    }
+    .parallax h1{
+        color: #fff;
+        text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    .parallax:nth-child(1) h1{
+        text-align: left;
+    }
+    .normal h1{
+        color: #333;
+    }
+
+
+@media (max-width: 430px) {
+    header{
+        height: auto;
+
+    }
+    .Navegacion {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Titulo{
+        padding-bottom: 10px;
+    }
+
+}
+
+
+

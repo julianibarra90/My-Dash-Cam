@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Lunasima', sans-serif;
+    background-color: #111035;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+ul{
+    display:flex;
+    gap: 20px;
+    list-style: none
+    
+}
+a{
+    text-decoration: none; 
+    color: #000;
+    transition: 0.5s;
+}
+a:hover{
+    color: #a8ff33;
+}
+
+.contenedor-imagen{
+    margin-top: 60px;
+    max-width: 100%;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.imagen-responsiva{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(70, 146, 185, 0.664);
+}
+
+
+.contenedor-texto{
+    font-family:'Rancho';
+    position: absolute;
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    color: aliceblue;
+    top: 20%;
+    transform:translate(-50 -50);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 09);
+}
+.logo{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0 0 10px rgb(211, 64, 6));
+}
+.Subscribe{
+    color: #f0f0f0;
+    text-align: center;
+    margin: 10%;
+    font-size: 50px;
+    font-family: 'Rancho';
+    text-shadow: 0 0 8px rgba(0, 0, 0)
+}
+.input{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin-bottom: 20px;
+}
+.input-email {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,-13px -13px 100px #d78282;
+  }
+
+footer{
+  
+    justify-content: center;
+    margin: 40px;
+    border-radius: 15px;
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 1rem;
+
+}
